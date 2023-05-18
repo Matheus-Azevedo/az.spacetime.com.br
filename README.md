@@ -7,59 +7,53 @@ Aplicação de recordação de memórias, onde o usuário poderá adicionar à u
 # SETUP: Server
 
 npm init -y
-
 npm i typescript -D
-
 npm i @types/node -D
-
 npx tsc --init
-
 npm i tsx -D
-
 npm i fastify
-
 npm i eslint -D
-
 npm i @rocketseat/eslint-config -D (.eslintrc.json e faça um extends)
-
 npm i prisma -D
-
 npx prisma init --datasource-provider SQLite (usar banco SQLite)
-
 npx prisma migrate dev
-
 npx prisma studio (visualização)
-
 npm i @prisma/client
+npm i zod (similar ao joi)
+npm i @fastify/cors (segurança, determina urls que acessam a api)
 
   
 
 Scripts em package.json
-
 "dev": "tsx watch src/server.ts"
-
 "lint": "eslint src --ext .ts --fix"
-
 "prisma": "npx prisma studio"
+
+
+Comandos
+npx prisma migrate reset
+npx prisma migrate dev
+
+http GET localhost:3333/memories
+http GET localhost:3333/memories/id
+http POST localhost:3333/memories
+http PUT localhost:3333/memories/id
+http DELETE localhost:3333/memories/id
 
 <br>
 
 # SETUP: Web
 
 npx create-next-app@latest web --use-npm
-
 npm i @rocketseat/eslint-config -D
-
 npm i prettier-plugin-tailwindcss -D
+npm i lucide-react
 
   
 
 delete README.md
-
 delete public content
-
 remove html da page.tsx
-
 remove conteudo de globals.css
 
 <br>
@@ -67,21 +61,15 @@ remove conteudo de globals.css
 # SETUP: Mobile
 
 npx create-expo-app mobile
-
 npm i nativewind
-
 npm i tailwindcss -D
-
 npm i eslint -D
-
 npm i @rocketseat/eslint-config -D
-
 npm i prettier-plugin-tailwindcss -D
+npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
 
-  
 
 Script
-
 start -> npx expo start --tunnel
 
 <br>
