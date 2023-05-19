@@ -21,14 +21,14 @@ npx prisma studio (visualização)
 npm i @prisma/client
 npm i zod (similar ao joi)
 npm i @fastify/cors (segurança, determina urls que acessam a api)
-
-  
+npm i dotenv -D
+npm i axios
+npm i @fastify/jwt
 
 Scripts em package.json
 "dev": "tsx watch src/server.ts"
 "lint": "eslint src --ext .ts --fix"
 "prisma": "npx prisma studio"
-
 
 Comandos
 npx prisma migrate reset
@@ -48,8 +48,8 @@ npx create-next-app@latest web --use-npm
 npm i @rocketseat/eslint-config -D
 npm i prettier-plugin-tailwindcss -D
 npm i lucide-react
-
-  
+npm i axios
+npm i jwt-decode
 
 delete README.md
 delete public content
@@ -68,9 +68,18 @@ npm i @rocketseat/eslint-config -D
 npm i prettier-plugin-tailwindcss -D
 npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
 
+npm install --save-dev typescript
+npx tsc --init --pretty --jsx react
 
 Script
 start -> npx expo start --tunnel
+
+Comandos
+npx tailwindcss init
+
+Tailwind config
+content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+content: ['./App.tsx', './app/**/*.tsx'],
 
 <br>
 
