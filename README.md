@@ -58,7 +58,7 @@ remove conteudo de globals.css
 
 <br>
 
-# SETUP: Mobile
+# SETUP: Mobile (devido a problemas técnicos com a  as configurações mobile, decidi suspender esta parte)
 
 npx create-expo-app mobile
 npm i nativewind
@@ -67,8 +67,10 @@ npm i eslint -D
 npm i @rocketseat/eslint-config -D
 npm i prettier-plugin-tailwindcss -D
 npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
+npx expo install expo-auth-session expo-crypto
+npm i axios
 
-npm install --save-dev typescript
+npm install --save-dev typescript (se precisar)
 npx tsc --init --pretty --jsx react
 
 Script
