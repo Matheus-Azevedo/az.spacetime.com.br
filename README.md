@@ -6,82 +6,82 @@ Aplicação de recordação de memórias, onde o usuário poderá adicionar à u
 
 # SETUP: Server
 
-npm init -y
-npm i typescript -D
-npm i @types/node -D
-npx tsc --init
-npm i tsx -D
-npm i fastify
-npm i eslint -D
-npm i @rocketseat/eslint-config -D (.eslintrc.json e faça um extends)
-npm i prisma -D
-npx prisma init --datasource-provider SQLite (usar banco SQLite)
-npx prisma migrate dev
-npx prisma studio (visualização)
-npm i @prisma/client
-npm i zod (similar ao joi)
-npm i @fastify/cors (segurança, determina urls que acessam a api)
-npm i dotenv -D
-npm i axios
-npm i @fastify/jwt
+- npm init -y
+- npm i typescript -D
+- npm i @types/node -D
+- npx tsc --init
+- npm i tsx -D
+- npm i fastify
+- npm i eslint -D
+- npm i @rocketseat/eslint-config -D (.eslintrc.json e faça um extends)
+- npm i prisma -D
+- npx prisma init --datasource-provider SQLite (usar banco SQLite)
+- npx prisma migrate dev
+- npx prisma studio (visualização)
+- npm i @prisma/client
+- npm i zod (similar ao joi)
+- npm i @fastify/cors (segurança, determina urls que acessam a api)
+- npm i dotenv -D
+- npm i axios
+- npm i @fastify/jwt
 
 Scripts em package.json
-"dev": "tsx watch src/server.ts"
-"lint": "eslint src --ext .ts --fix"
-"prisma": "npx prisma studio"
+- "dev": "tsx watch src/server.ts"
+- "lint": "eslint src --ext .ts --fix"
+- "prisma": "npx prisma studio"
 
 Comandos
-npx prisma migrate reset
-npx prisma migrate dev
+- npx prisma migrate reset
+- npx prisma migrate dev
 
-http GET localhost:3333/memories
-http GET localhost:3333/memories/id
-http POST localhost:3333/memories
-http PUT localhost:3333/memories/id
-http DELETE localhost:3333/memories/id
+- http GET localhost:3333/memories
+- http GET localhost:3333/memories/id
+- http POST localhost:3333/memories
+- http PUT localhost:3333/memories/id
+- http DELETE localhost:3333/memories/id
 
 <br>
 
 # SETUP: Web
 
-npx create-next-app@latest web --use-npm
-npm i @rocketseat/eslint-config -D
-npm i prettier-plugin-tailwindcss -D
-npm i lucide-react
-npm i axios
-npm i jwt-decode
+- npx create-next-app@latest web --use-npm
+- npm i @rocketseat/eslint-config -D
+- npm i prettier-plugin-tailwindcss -D
+- npm i lucide-react
+- npm i axios
+- npm i jwt-decode
 
-delete README.md
-delete public content
-remove html da page.tsx
-remove conteudo de globals.css
+- delete README.md
+- delete public content
+- remove html da page.tsx
+- remove conteudo de globals.css
 
 <br>
 
 # SETUP: Mobile (devido a problemas técnicos com a  as configurações mobile, decidi suspender esta parte)
 
-npx create-expo-app mobile
-npm i nativewind
-npm i tailwindcss -D
-npm i eslint -D
-npm i @rocketseat/eslint-config -D
-npm i prettier-plugin-tailwindcss -D
-npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
-npx expo install expo-auth-session expo-crypto
-npm i axios
+- npx create-expo-app mobile
+- npm i nativewind
+- npm i tailwindcss -D
+- npm i eslint -D
+- npm i @rocketseat/eslint-config -D
+- npm i prettier-plugin-tailwindcss -D
+- npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
+- npx expo install expo-auth-session expo-crypto
+- npm i axios
 
-npm install --save-dev typescript (se precisar)
-npx tsc --init --pretty --jsx react
+- npm install --save-dev typescript (se precisar)
+- npx tsc --init --pretty --jsx react
 
 Script
-start -> npx expo start --tunnel
+- start -> npx expo start --tunnel
 
 Comandos
-npx tailwindcss init
+- npx tailwindcss init
 
 Tailwind config
-content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
-content: ['./App.tsx', './app/**/*.tsx'],
+- content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+- content: ['./App.tsx', './app/**/*.tsx'],
 
 <br>
 
