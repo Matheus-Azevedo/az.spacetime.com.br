@@ -1,5 +1,5 @@
 import { BackToTimeLine } from '@/components/BackToTimeLine'
-import { Forms } from '@/components/Forms'
+import { RegisterMemory } from '@/components/RegisterMemory'
 
 export default function NewMemory() {
   return (
@@ -7,7 +7,7 @@ export default function NewMemory() {
       {/* BACK TO TIMELINE */}
       <BackToTimeLine />
       {/* FORM */}
-      <Forms />
+      <RegisterMemory />
     </div>
   )
 }

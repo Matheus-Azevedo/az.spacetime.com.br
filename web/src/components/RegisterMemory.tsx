@@ -1,6 +1,6 @@
 import { MdOutlinePhotoLibrary } from 'react-icons/md'
 
-export function Forms() {
+export function RegisterMemory() {
   return (
     <form className="flex flex-1 flex-col gap-2">
       <div className="flex items-center gap-4">
