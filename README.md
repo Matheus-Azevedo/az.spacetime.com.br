@@ -60,7 +60,7 @@ Comandos
 
 <br>
 
-# SETUP: Mobile (devido a problemas técnicos com a  as configurações mobile, decidi suspender esta parte)
+# SETUP: Mobile (devido a problemas técnicos com as configurações mobile, decidi suspender temporariamente esta parte)
 
 - npx create-expo-app mobile
 - npm i nativewind
