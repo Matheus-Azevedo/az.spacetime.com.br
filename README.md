@@ -50,6 +50,8 @@ Comandos
 - npm i lucide-react
 - npm i axios
 - npm i jwt-decode
+- npm install react-icons --save
+- npm install -D @tailwindcss/forms
 
 - delete README.md
 - delete public content
