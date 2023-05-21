@@ -24,6 +24,8 @@ Aplicação de recordação de memórias, onde o usuário poderá adicionar à u
 - npm i dotenv -D
 - npm i axios
 - npm i @fastify/jwt
+- npm i @fastify/multipart (permite o envio de arquivos de forma fracionada)
+- npm i @fastify/static (permite que uma pasta do backend fique pública)
 
 Scripts em package.json
 - "dev": "tsx watch src/server.ts"
@@ -39,6 +41,8 @@ Comandos
 - http POST localhost:3333/memories
 - http PUT localhost:3333/memories/id
 - http DELETE localhost:3333/memories/id
+
+- http POST localhost:3333/upload file@~/Documents/nissan-gtr-gtav-5k-va.jpg -f
 
 <br>
 
