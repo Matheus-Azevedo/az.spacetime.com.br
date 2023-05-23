@@ -1,4 +1,4 @@
-import { Link } from 'lucide-react'
+import Link from 'next/link'
 import { MdKeyboardArrowLeft } from 'react-icons/md'
 
 export function BackToTimeLine() {

@@ -56,6 +56,8 @@ Comandos
 - npm i jwt-decode
 - npm install react-icons --save
 - npm install -D @tailwindcss/forms
+- npm i js-cookie
+- npm i --save-dev @types/js-cookie
 
 - delete README.md
 - delete public content
